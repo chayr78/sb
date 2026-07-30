@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${Titulo}">Pagina Spring Boot</title>
+</head>
+<body>
+<div>
+    <h1>Información de la Persona</h1>
+    <ul>
+        <li><strong>Nombre:</strong> <span th:text="${Persona.nombre}"></span></li>
+        <li><strong>Edad:</strong> <span th:text="${Persona.edad}"></span></li>
+        <li><strong>Altura:</strong> <span th:text="${Persona.altura}"></span></li>
+        <li><strong>Peso:</strong> <span th:text="${Persona.peso}"></span></li>
+    </ul>
+
+    <h1>Información del Trabajador</h1>
+    <ul>
+        <li><strong>Nombre:</strong> <span th:text="${trabajador.nombre}"></span></li>
+        <li><strong>Edad:</strong> <span th:text="${trabajador.edad}"></span></li>
+        <li><strong>Estatura:</strong> <span th:text="${trabajador.estatura}"></span></li>
+        <li><strong>Peso:</strong> <span th:text="${trabajador.peso}"></span></li>
+    </ul>
+
+    <h1>Información del Alumno</h1>
+    <ul>
+        <li><strong>Nombre:</strong> <span th:text="${alumno.nombre}"></span></li>
+        <li><strong>Edad:</strong> <span th:text="${alumno.edad}"></span></li>
+        <li><strong>Estatura:</strong> <span th:text="${alumno.estatura}"></span></li>
+        <li><strong>Peso:</strong> <span th:text="${alumno.peso}"></span></li>
+    </ul>
+</div>
+</body>
+</html>
